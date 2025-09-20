@@ -85,7 +85,6 @@ if(!done){
   for(int i = 0;i<25;i++){
     lightning();
     draw();
-    health--;
   }
   background(0);
   textSize(128);
