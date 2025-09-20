@@ -81,6 +81,7 @@ void lightning(){
 void mouseClicked(){
   if(health>0){
     lightning();
+    draw();
     health--;
   }
 }
