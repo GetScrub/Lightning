@@ -2,6 +2,7 @@
 //PImage dragon;
 //PImage background;
 int health = 25;
+boolean done = false;
 void setup(){
   size(1200,600);
   //background = loadImage("Background.jpg");
@@ -52,10 +53,10 @@ void draw(){
 
 void lightning(){
   //background(background);
-  background(#0B6623);
+
   stroke(0);
   fill(#FFFFFF);
-  dumbledore();
+
   int prevX = 320;
   int prevY = 350;
   //Make it spawn at 110,190
@@ -79,11 +80,19 @@ void lightning(){
 }
 
 void mouseClicked(){
-  if(health>0){
+if(!done){
+
+  for(int i = 0;i<25;i++){
     lightning();
     draw();
     health--;
   }
+  background(0);
+  textSize(128);
+  fill(#FFD700);
+  text("You Win!",300,300);
+  done = true;
+}
 }
 
 void dumbledore(){
