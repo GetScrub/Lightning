@@ -1,7 +1,7 @@
 //PImage dumbledore;
 //PImage dragon;
 //PImage background;
-int health;
+int health = 25;
 void setup(){
   size(1200,600);
   //background = loadImage("Background.jpg");
