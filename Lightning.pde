@@ -4,12 +4,12 @@ PImage background;
 int health;
 void setup(){
   size(1200,600);
-  background = loadImage("Background.jpg");
-  dumbledore = loadImage("Dumbledore.png");
-  dragon = loadImage("Dragon.png");
+  background = loadImage("https://github.com/GetScrub/Lightning/blob/685652387d3dec9062d9ac68d2bac42eb7a16f33/Background.jpg");
+  dumbledore = loadImage("https://github.com/GetScrub/Lightning/blob/685652387d3dec9062d9ac68d2bac42eb7a16f33/Dumbledore.png");
+  dragon = loadImage("https://github.com/GetScrub/Lightning/blob/685652387d3dec9062d9ac68d2bac42eb7a16f33/Dragon.png");
   health = 25;
-  //background(background);
-  background(#0B6623);
+  background(background);
+  //background(#0B6623);
   image(dumbledore, 50, 150);
 }
 
@@ -37,8 +37,8 @@ void draw(){
 }
 
 void lightning(){
-  //background(background);
-  background(#0B6623);
+  background(background);
+  //background(#0B6623);
   image(dumbledore, 50, 150);
   int prevX = 110;
   int prevY = 190;
